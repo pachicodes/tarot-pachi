@@ -2,7 +2,7 @@
 
 ## Fase 1: Base Estática Inicial
 
-**Status:** TODO
+**Status:** CONCLUÍDA
 
 **Objetivo:** Criar a estrutura mínima da página estática, abrindo diretamente no navegador e carregando a folha de estilos corretamente.
 
