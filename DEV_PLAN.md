@@ -102,7 +102,7 @@
 
 ## Fase 5: Interação e Acessibilidade
 
-**Status:** TODO
+**Status:** CONCLUÍDA
 
 **Objetivo:** Adicionar os estados de interação obrigatórios, o botão flutuante de WhatsApp e os fundamentos de acessibilidade.
 

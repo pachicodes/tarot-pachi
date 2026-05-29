@@ -1,6 +1,6 @@
 /* ==========================================================================
    Pachi | Tarot Intuitivo & Direção — styles.css
-   Fases 3–4: sistema visual + layout responsivo (mobile-first)
+   Fases 3–5: visual, layout responsivo e acessibilidade (mobile-first)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -55,6 +55,7 @@
   --shadow-elevated: 0 12px 40px rgba(47, 51, 37, 0.09);
 
   --transition: 0.3s ease;
+  --z-floating: 50;
 }
 
 /* --------------------------------------------------------------------------
@@ -78,6 +79,7 @@ html {
 body {
   min-height: 100vh;
   overflow-x: clip;
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
   font-family: var(--font-body);
   font-size: var(--text-base);
   font-weight: 400;
@@ -105,6 +107,10 @@ a {
 
 a:hover {
   color: var(--color-olive-dark);
+}
+
+a:active:not(.btn):not(.floating-whatsapp):not(.skip-link) {
+  opacity: 0.85;
 }
 
 a:focus-visible,
@@ -350,6 +356,85 @@ h4 {
   background-color: var(--color-olive);
   color: var(--color-bg-card);
   border-color: var(--color-olive);
+}
+
+.btn--secondary:active {
+  background-color: var(--color-olive-dark);
+  color: var(--color-bg-card);
+  border-color: var(--color-olive-dark);
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   6b. Acessibilidade — skip link
+   -------------------------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: calc(var(--z-floating) + 1);
+  padding: 0.75rem 1.25rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-bg-card);
+  text-decoration: none;
+  background-color: var(--color-olive);
+  border-radius: 0 0 var(--radius-sm) 0;
+  transform: translateY(-120%);
+  transition: transform var(--transition);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   6c. Botão flutuante WhatsApp
+   -------------------------------------------------------------------------- */
+.floating-whatsapp {
+  position: fixed;
+  right: max(1.5rem, env(safe-area-inset-right, 0px));
+  bottom: max(1.5rem, env(safe-area-inset-bottom, 0px));
+  z-index: var(--z-floating);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  color: var(--color-bg-card);
+  text-decoration: none;
+  background-color: var(--color-olive);
+  border: 2px solid var(--color-gold-soft);
+  border-radius: 50%;
+  box-shadow: var(--shadow-soft);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.floating-whatsapp:hover {
+  color: #fff;
+  background-color: var(--color-olive-dark);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-elevated);
+}
+
+.floating-whatsapp:active {
+  transform: scale(0.97);
+  box-shadow: var(--shadow-card);
+}
+
+.floating-whatsapp:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.floating-whatsapp__icon {
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -723,6 +808,17 @@ h4 {
   color: var(--color-bg-card);
 }
 
+.site-footer__nav a:focus-visible,
+.site-footer__legal a:focus-visible {
+  outline-color: var(--color-bg-card);
+  outline-offset: 3px;
+}
+
+.site-footer__nav a:active,
+.site-footer__legal a:active {
+  opacity: 0.85;
+}
+
 .site-footer__legal {
   opacity: 0.8;
   padding-top: var(--space-xs);
@@ -825,5 +921,23 @@ h4 {
 
   .process-step::before {
     top: var(--space-md);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   15. Acessibilidade — movimento reduzido (Fase 5)
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .floating-whatsapp:active {
+    transform: none;
   }
 }
