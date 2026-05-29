@@ -26,7 +26,7 @@
 
 ## Fase 2: Conteúdo da Landing Page
 
-**Status:** TODO
+**Status:** CONCLUÍDA
 
 **Objetivo:** Adicionar todas as seções obrigatórias da landing page em HTML semântico, seguindo a ordem e a copy definidas no roadmap e no documento de planejamento.
 

@@ -34,7 +34,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <!-- LOGOMARCA: substituir src/alt se necessário -->
-      <a href="#" class="site-header__brand" aria-label="Pachi — início">
+      <a href="#hero" class="site-header__brand" aria-label="Pachi — início">
         <img
           src="img/TP-Logomarca.jpg"
           alt="Pachi — Tarot Intuitivo e Direção"
@@ -87,45 +87,201 @@
     </div>
   </section>
 
-  <!-- Placeholders das próximas seções (Fase 2+) -->
-  <section class="section section--cream" id="sobre" aria-label="Sobre">
+  <section class="section section--cream" id="sobre" aria-labelledby="sobre-title">
     <div class="container">
-      <p class="section-placeholder">Seção Sobre / Manifesto — conteúdo na Fase 2</p>
-      <!-- FOTO PESSOAL: substituir o placeholder abaixo -->
-      <div class="photo-placeholder" role="img" aria-label="Placeholder para foto pessoal"></div>
+      <div class="about-grid">
+        <!-- FOTO PESSOAL: substituir o placeholder abaixo por <img src="..." alt="..."> -->
+        <div class="photo-placeholder" role="img" aria-label="Placeholder para foto pessoal"></div>
+        <div class="about-grid__content">
+          <h2 class="section-heading" id="sobre-title">Seja bem-vinda à minha mesa.</h2>
+          <p>
+            Eu trabalho com Tarot Intuitivo &amp; Direção. Minhas leituras são feitas a partir do seu contexto real — aquilo que você está vivendo, sentindo e tentando organizar. Não trabalho com adivinhação passiva nem com respostas prontas. Leio o campo simbólico para devolver direção, presença e um próximo movimento possível.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="servicos" aria-label="Serviços">
+  <section class="section" id="servicos" aria-labelledby="servicos-title">
     <div class="container">
-      <p class="section-placeholder">Seção Serviços — conteúdo na Fase 2</p>
+      <h2 class="section-heading" id="servicos-title">A prateleira oficial</h2>
+      <ul class="services-grid">
+        <li>
+          <article class="service-card">
+            <h3 class="service-card__title">Bússola Intuitiva</h3>
+            <p class="service-card__price">R$147</p>
+            <p class="service-card__description">
+              Para olhar uma área da vida com mais presença: amor, espiritualidade, estudos, finanças, vitalidade, família ou ciclos.
+            </p>
+            <p class="service-card__delivery">
+              <strong>Entrega:</strong> Áudio + imagem da tiragem + Carta de Direção + 48h para perguntas.
+            </p>
+            <!-- WHATSAPP: Bússola Intuitiva -->
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Quero%20minha%20B%C3%BAssola."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero minha Bússola
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <h3 class="service-card__title">Bússola Profissional</h3>
+            <p class="service-card__price">R$197</p>
+            <p class="service-card__description">
+              Para temas de carreira, trabalho, negócio ou posicionamento profissional.
+            </p>
+            <p class="service-card__delivery">
+              <strong>Entrega:</strong> Áudio ou vídeo + imagem da tiragem + Mapa Profissional + 48h para perguntas.
+            </p>
+            <!-- WHATSAPP: Bússola Profissional -->
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Quero%20dire%C3%A7%C3%A3o%20profissional."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero direção profissional
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <h3 class="service-card__title">Norte da Semana</h3>
+            <p class="service-card__price">R$247/mês</p>
+            <p class="service-card__description">
+              Uma leitura individual breve enviada todo domingo para atravessar a semana com presença, foco e direção.
+            </p>
+            <p class="service-card__delivery">
+              <strong>Entrega:</strong> A cliente envia uma frase com o tema principal da semana e recebe um áudio curto com direção individual.
+            </p>
+            <!-- WHATSAPP: Norte da Semana -->
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Quero%20meu%20Norte."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero meu Norte
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="service-card service-card--ritual">
+            <h3 class="service-card__title">Rituais &amp; Alquimia</h3>
+            <p class="service-card__price service-card__price--soft">Sob orientação após leitura</p>
+            <p class="service-card__tag">Primeiro vem a direção. Depois, a sustentação.</p>
+            <p class="service-card__description">
+              Algumas leituras pedem sustentação ritual. Depois da leitura, posso indicar um Ritual Guiado ou um Ritual Feito por Mim, conforme o que o campo pedir.
+            </p>
+            <!-- WHATSAPP: Rituais & Alquimia -->
+            <a
+              class="btn btn--secondary"
+              href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Quero%20perguntar%20sobre%20Rituais%20%26%20Alquimia."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Perguntar sobre Rituais &amp; Alquimia
+            </a>
+          </article>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section class="section section--cream" id="processo" aria-label="Como funciona">
+  <section class="section section--cream" id="processo" aria-labelledby="processo-title">
     <div class="container">
-      <p class="section-placeholder">Seção Como Funciona — conteúdo na Fase 2</p>
+      <h2 class="section-heading" id="processo-title">Como funciona o atendimento</h2>
+      <ol class="process-steps">
+        <li class="process-step">
+          <h3 class="process-step__title">Você me conta seu momento</h3>
+          <p class="process-step__text">Você envia seu contexto e a área que deseja olhar.</p>
+        </li>
+        <li class="process-step">
+          <h3 class="process-step__title">Eu preparo a leitura</h3>
+          <p class="process-step__text">A leitura é feita de forma assíncrona, com cuidado, intenção e profundidade.</p>
+        </li>
+        <li class="process-step">
+          <h3 class="process-step__title">Você recebe sua direção</h3>
+          <p class="process-step__text">Entrego áudio ou vídeo, imagem da tiragem e material de apoio conforme o serviço escolhido.</p>
+        </li>
+        <li class="process-step">
+          <h3 class="process-step__title">Você pode aprofundar</h3>
+          <p class="process-step__text">Após a entrega, há um período para perguntas. Em alguns casos, a leitura pode indicar uma Rota ou um ritual de sustentação.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section class="section" id="rota" aria-label="Rota de Decisão">
+  <section class="section section--highlight" id="rota" aria-labelledby="rota-title">
     <div class="container">
-      <p class="section-placeholder">Seção Rota de Decisão — conteúdo na Fase 2</p>
+      <h2 class="section-heading" id="rota-title">Quando a leitura revela que existe uma decisão pedindo mais cuidado.</h2>
+      <p>
+        A Rota de Decisão é um aprofundamento pós-Bússola. Ela não é a porta de entrada principal. É indicada quando, depois da Bússola Profissional, fica claro que você não precisa apenas entender o cenário — precisa sustentar uma escolha.
+      </p>
+      <!-- WHATSAPP: Rota / Bússola Profissional -->
+      <a
+        class="btn btn--primary"
+        href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Tenho%20interesse%20na%20B%C3%BAssola%20Profissional."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comece pela Bússola Profissional
+      </a>
     </div>
   </section>
 
-  <section class="section section--cream" id="rituais" aria-label="Rituais e Alquimia">
+  <section class="section section--cream" id="rituais" aria-labelledby="rituais-title">
     <div class="container">
-      <p class="section-placeholder">Seção Rituais &amp; Alquimia — conteúdo na Fase 2</p>
+      <h2 class="section-heading" id="rituais-title">Primeiro vem a direção. Depois, a sustentação.</h2>
+      <p>
+        Alguns caminhos pedem mais do que interpretação. Depois da leitura, posso orientar práticas ritualísticas ou realizar rituais por você, usando meus fundamentos, ingredientes, preparo e experiência magística.
+      </p>
+      <ul class="intention-tags" aria-label="Intenções ritualísticas">
+        <li>Prosperidade</li>
+        <li>Amor próprio</li>
+        <li>Abertura de caminhos</li>
+        <li>Proteção</li>
+        <li>Foco</li>
+        <li>Encerramento de ciclos</li>
+        <li>Coragem</li>
+      </ul>
+      <p class="rituals-note">
+        <em>Nem todo ritual pode ser guiado. Alguns trabalhos exigem condução direta.</em>
+      </p>
     </div>
   </section>
 
-  <section class="section" id="cta-final" aria-label="Contato">
-    <div class="container">
-      <p class="section-placeholder">CTA final — conteúdo na Fase 2</p>
+  <section class="section" id="cta-final" aria-labelledby="cta-final-title">
+    <div class="container cta-final__inner">
+      <h2 class="section-heading" id="cta-final-title">Não sabe qual leitura escolher?</h2>
+      <p>
+        Me chame no WhatsApp com a palavra <strong>BÚSSOLA</strong> e me conte, em uma frase, o que está vivendo agora.
+      </p>
+      <!-- WHATSAPP: CTA final com palavra BÚSSOLA -->
+      <a
+        class="btn btn--primary"
+        href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20B%C3%9ASSOLA.%20Quero%20entender%20qual%20leitura%20faz%20sentido%20para%20o%20meu%20momento."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Falar com a Pachi
+      </a>
     </div>
   </section>
   </main>
+
+  <aside class="ethical-note" id="nota-etica" aria-labelledby="nota-etica-title">
+    <div class="container">
+      <h2 class="ethical-note__title" id="nota-etica-title">Nota ética</h2>
+      <p>
+        O tarot oferece reflexão simbólica, clareza e direção prática. Ele não substitui decisões pessoais nem acompanhamento terapêutico, médico, jurídico ou financeiro.
+      </p>
+    </div>
+  </aside>
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
@@ -136,10 +292,8 @@
         <a id="INSTAGRAM_LINK" href="https://instagram.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://wa.me/55SEUNUMERO?text=Oi%2C%20Pachi.%20Quero%20encontrar%20minha%20B%C3%BAssola%20e%20entender%20qual%20leitura%20faz%20sentido%20para%20o%20meu%20momento." target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </nav>
-      <p class="site-footer__note">
-        <small>
-          O tarot oferece reflexão simbólica, clareza e direção prática. Não substitui decisões pessoais nem acompanhamento terapêutico, médico, jurídico ou financeiro.
-        </small>
+      <p class="site-footer__legal">
+        <small><a href="#nota-etica">Nota ética</a></small>
       </p>
     </div>
   </footer>
