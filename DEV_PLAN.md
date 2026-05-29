@@ -78,7 +78,7 @@
 
 ## Fase 4: Layout Responsivo
 
-**Status:** TODO
+**Status:** CONCLUÍDA
 
 **Objetivo:** Garantir que a página seja mobile-first e se adapte bem a larguras de tablet e desktop.
 
