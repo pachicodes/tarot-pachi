@@ -12,7 +12,7 @@
 - Criar `styles.css`
 - Vincular `styles.css` a partir de `index.html`
 - Adicionar metadados base para idioma, charset, viewport, título, descrição e compartilhamento social
-- Vincular as fontes web selecionadas
+- Vincular as fontes web selecionadas: `Arbutus Slab` e `Poppins`
 - Adicionar comentários para substituir WhatsApp, Instagram, logomarca, submarca, foto pessoal e mensagens dos CTAs
 
 **Critérios de Aceite Manuais:**
@@ -62,7 +62,7 @@
 
 - Atualizar `styles.css`
 - Definir variáveis em `:root` para cores, fontes, espaçamento, raio de borda e sombras
-- Estilizar a tipografia base com títulos serifados e texto corrido limpo
+- Estilizar a tipografia base com `Arbutus Slab` nos títulos e `Poppins` nos textos corridos, botões e interface
 - Aplicar fundo off-white quente, texto em verde-oliva escuro e detalhes em dourado queimado
 - Adicionar espaçamento mobile-first, ritmo de seções, cards, botões, tags e divisórias sutis
 - Usar `img/TP-Logomarca.jpg` e `img/TP-Submarca.jpg` nos lugares apropriados

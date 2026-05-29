@@ -45,10 +45,10 @@ Evitar exagero esotérico, roxo saturado, neon, cristais genéricos, excesso de 
 
 ## Tipografia
 
-- Títulos: fonte serifada forte e elegante, como Playfair Display ou Lora.
-- Textos corridos: Inter ou Poppins.
+- Títulos e elementos de impacto: `Arbutus Slab`.
+- Textos corridos, botões e interface: `Poppins`.
 
-A tipografia deve transmitir maturidade, presença e acolhimento, sem parecer corporativa demais.
+A combinação tipográfica deve transmitir presença, maturidade e acolhimento, usando o peso editorial da `Arbutus Slab` com a clareza moderna da `Poppins`.
 
 ## Tom de Comunicação
 

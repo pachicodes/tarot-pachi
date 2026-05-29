@@ -80,6 +80,8 @@ Usar CSS mobile-first:
 - Começar pelo layout da menor tela.
 - Adicionar media queries somente quando o layout precisar de mais espaço.
 - Usar propriedades customizadas CSS em `:root` para cores, tipografia, espaçamento, raios e sombras.
+- Usar `Arbutus Slab` para títulos e elementos de impacto.
+- Usar `Poppins` para textos corridos, botões e elementos de interface.
 - Usar `clamp()` para tipografia responsiva.
 - Usar `grid` e `flexbox` para layout.
 

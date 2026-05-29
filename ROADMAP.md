@@ -21,6 +21,7 @@ Essa é a direção correta porque a landing page é estática, não tem backend
 2. **Criar o sistema visual**
    - Criar um `styles.css` mobile-first usando variáveis CSS para cores, tipografia, espaçamento, bordas e sombras.
    - Usar os assets existentes em `img/TP-Logomarca.jpg` e `img/TP-Submarca.jpg` como referência visual.
+   - Usar `Arbutus Slab` para títulos/elementos de impacto e `Poppins` para textos corridos, botões e interface.
    - Aplicar fundo off-white quente, texto em verde-oliva escuro, detalhes em dourado queimado, símbolos ritualísticos sutis e espaçamento editorial.
 
 3. **Renderizar a landing page completa**
@@ -65,6 +66,7 @@ tarot-pachi/
 
 - Adicionar `styles.css`.
 - Definir variáveis em `:root` para paleta da marca, fontes, espaçamento, raios e sombras.
+- Definir a tipografia com `Arbutus Slab` para títulos e `Poppins` para textos/interface.
 - Estilizar a página primeiro para mobile.
 - Adicionar breakpoints para desktop somente onde o layout precisar de mais largura, como na seção sobre e no grid de serviços.
 
