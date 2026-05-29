@@ -1,149 +1,149 @@
 # DEV_PLAN
 
-## Phase 1: Base Static Shell
+## Fase 1: Base Estática Inicial
 
 **Status:** TODO
 
-**Goal:** Create the minimum static page shell that opens directly in the browser and links the stylesheet correctly.
+**Objetivo:** Criar a estrutura mínima da página estática, abrindo diretamente no navegador e carregando a folha de estilos corretamente.
 
-**Deliverables:**
+**Entregáveis:**
 
-- Create `index.html`
-- Create `styles.css`
-- Link `styles.css` from `index.html`
-- Add base metadata for language, charset, viewport, title, description, and social sharing
-- Link the selected web fonts
-- Add comments for replacing WhatsApp, Instagram, logo, submark, personal photo, and CTA messages
+- Criar `index.html`
+- Criar `styles.css`
+- Vincular `styles.css` a partir de `index.html`
+- Adicionar metadados base para idioma, charset, viewport, título, descrição e compartilhamento social
+- Vincular as fontes web selecionadas
+- Adicionar comentários para substituir WhatsApp, Instagram, logomarca, submarca, foto pessoal e mensagens dos CTAs
 
-**Manual Acceptance Criteria:**
+**Critérios de Aceite Manuais:**
 
-- Opening `index.html` in a browser displays a valid page without console errors.
-- The browser tab shows the Pachi page title.
-- The page uses Portuguese language metadata.
-- The stylesheet loads successfully.
-- The page contains visible placeholder structure for the landing page.
-- The source includes clear replacement comments for all future real links and assets.
+- Ao abrir `index.html` no navegador, uma página válida aparece sem erros no console.
+- A aba do navegador mostra o título da página da Pachi.
+- A página usa metadados de idioma em português.
+- A folha de estilos carrega corretamente.
+- A página contém uma estrutura placeholder visível para a landing page.
+- O código-fonte inclui comentários claros para todos os links e assets reais futuros.
 
-## Phase 2: Landing Page Content
-
-**Status:** TODO
-
-**Goal:** Add all required landing page sections in semantic HTML, following the order and copy defined by the roadmap and planning document.
-
-**Deliverables:**
-
-- Update `index.html`
-- Add the hero section
-- Add the about/manifesto section with a photo placeholder
-- Add the services section with four service cards
-- Add the process section with four numbered steps
-- Add the post-Bússola decision route section
-- Add the rituals and alchemy section with intention tags
-- Add the final CTA section
-- Add the ethical note
-- Add the footer
-
-**Manual Acceptance Criteria:**
-
-- The browser displays all planned sections in the correct order.
-- The hero includes the main headline, subtitle, support text, and primary WhatsApp CTA.
-- The services section includes the four planned offers: Bússola Intuitiva, Bússola Profissional, Norte da Semana, and Rituais & Alquimia.
-- Each service card includes its planned description, delivery details, pricing or price guidance, and CTA.
-- The ethical note is present and visible.
-- The copy does not promise future prediction or replace therapeutic, medical, legal, or financial support.
-
-## Phase 3: Brand Visual System
+## Fase 2: Conteúdo da Landing Page
 
 **Status:** TODO
 
-**Goal:** Apply the mobile-first visual direction using the existing logo and submark as the brand reference.
+**Objetivo:** Adicionar todas as seções obrigatórias da landing page em HTML semântico, seguindo a ordem e a copy definidas no roadmap e no documento de planejamento.
 
-**Deliverables:**
+**Entregáveis:**
 
-- Update `styles.css`
-- Define `:root` variables for colors, fonts, spacing, border radius, and shadows
-- Style base typography with serif headings and clean body text
-- Apply the warm off-white background, dark olive text, and burned gold accents
-- Add mobile-first spacing, section rhythm, cards, buttons, tags, and subtle dividers
-- Use `img/TP-Logomarca.jpg` and `img/TP-Submarca.jpg` in appropriate places
+- Atualizar `index.html`
+- Adicionar a seção hero
+- Adicionar a seção sobre/manifesto com placeholder de foto
+- Adicionar a seção de serviços com quatro cards
+- Adicionar a seção de processo com quatro etapas numeradas
+- Adicionar a seção Rota de Decisão pós-Bússola
+- Adicionar a seção Rituais & Alquimia com tags de intenção
+- Adicionar a seção de CTA final
+- Adicionar a nota ética
+- Adicionar o footer
 
-**Manual Acceptance Criteria:**
+**Critérios de Aceite Manuais:**
 
-- The page visually matches the existing logo and submark palette.
-- The design feels mature, editorial, ritualistic, and minimal rather than childish or overly mystical.
-- The logo and submark appear at restrained sizes and do not dominate the mobile layout.
-- Cards have subtle borders, rounded corners, and soft shadows.
-- CTAs are visually clear without feeling aggressive.
-- Typography scales gracefully on small screens.
+- O navegador exibe todas as seções planejadas na ordem correta.
+- O hero inclui título principal, subtítulo, texto de apoio e CTA primário para WhatsApp.
+- A seção de serviços inclui as quatro ofertas planejadas: Bússola Intuitiva, Bússola Profissional, Norte da Semana e Rituais & Alquimia.
+- Cada card de serviço inclui descrição, detalhes de entrega, preço ou orientação de preço e CTA planejados.
+- A nota ética está presente e visível.
+- A copy não promete previsão do futuro nem substitui apoio terapêutico, médico, jurídico ou financeiro.
 
-## Phase 4: Responsive Layout
-
-**Status:** TODO
-
-**Goal:** Ensure the page is designed mobile-first and adapts cleanly to tablet and desktop widths.
-
-**Deliverables:**
-
-- Update `styles.css`
-- Add responsive breakpoints only where needed
-- Stack all content cleanly on mobile
-- Convert the about section to two columns on wider screens
-- Convert the services section from one column on mobile to a multi-column grid on wider screens
-- Keep the process section readable across screen sizes
-
-**Manual Acceptance Criteria:**
-
-- On a narrow mobile viewport, the page is readable without horizontal scrolling.
-- On mobile, sections stack naturally and CTAs are easy to tap.
-- On desktop, the about section uses two columns.
-- On desktop, the services section displays as a multi-column grid.
-- Spacing remains balanced from mobile to desktop.
-- Images and placeholders do not stretch or distort.
-
-## Phase 5: Interaction and Accessibility Polish
+## Fase 3: Sistema Visual da Marca
 
 **Status:** TODO
 
-**Goal:** Add the required interaction states, floating WhatsApp button, and accessibility basics.
+**Objetivo:** Aplicar a direção visual mobile-first usando a logomarca e a submarca existentes como referência da marca.
 
-**Deliverables:**
+**Entregáveis:**
 
-- Update `index.html`
-- Update `styles.css`
-- Add a fixed floating WhatsApp button in the lower-right corner
-- Add hover, active, and focus-visible states for all links and CTAs
-- Add descriptive `alt` text for logo, submark, and image placeholders
-- Add accessible labels where needed
-- Confirm readable contrast for text, buttons, and links
+- Atualizar `styles.css`
+- Definir variáveis em `:root` para cores, fontes, espaçamento, raio de borda e sombras
+- Estilizar a tipografia base com títulos serifados e texto corrido limpo
+- Aplicar fundo off-white quente, texto em verde-oliva escuro e detalhes em dourado queimado
+- Adicionar espaçamento mobile-first, ritmo de seções, cards, botões, tags e divisórias sutis
+- Usar `img/TP-Logomarca.jpg` e `img/TP-Submarca.jpg` nos lugares apropriados
 
-**Manual Acceptance Criteria:**
+**Critérios de Aceite Manuais:**
 
-- The floating WhatsApp button remains visible while scrolling.
-- All CTAs and footer links have visible hover, active, and keyboard focus states.
-- Keyboard navigation can reach all interactive links.
-- Focus styles are clearly visible.
-- Images have useful alternative text.
-- Text remains readable against the background colors.
+- A página combina visualmente com a paleta da logomarca e da submarca existentes.
+- O design parece maduro, editorial, ritualístico e minimalista, sem ficar infantil ou excessivamente místico.
+- A logomarca e a submarca aparecem em tamanhos contidos e não dominam o layout mobile.
+- Os cards têm bordas sutis, cantos arredondados e sombras suaves.
+- Os CTAs são visualmente claros sem parecer agressivos.
+- A tipografia escala bem em telas pequenas.
 
-## Phase 6: GitHub Pages Readiness
+## Fase 4: Layout Responsivo
 
 **Status:** TODO
 
-**Goal:** Prepare the finished static site for direct publication through GitHub Pages without a build step.
+**Objetivo:** Garantir que a página seja mobile-first e se adapte bem a larguras de tablet e desktop.
 
-**Deliverables:**
+**Entregáveis:**
 
-- Verify `index.html` is at the repository root
-- Verify `styles.css` is at the repository root
-- Verify image paths point to the existing `img/` folder using relative paths
-- Update `README.md` with local preview and GitHub Pages deployment notes if needed
-- Leave the project dependency-free with no package manager or build configuration
+- Atualizar `styles.css`
+- Adicionar breakpoints responsivos somente onde necessário
+- Empilhar todo o conteúdo corretamente no mobile
+- Transformar a seção sobre em duas colunas em telas maiores
+- Transformar a seção de serviços de uma coluna no mobile para um grid com múltiplas colunas em telas maiores
+- Manter a seção de processo legível em diferentes tamanhos de tela
 
-**Manual Acceptance Criteria:**
+**Critérios de Aceite Manuais:**
 
-- The site works when opening `index.html` directly in a browser.
-- All images load through relative paths.
-- No build command is required.
-- No package install command is required.
-- The repository root contains the production-ready site files.
-- GitHub Pages can be configured to publish from the repository root on the selected branch, typically `main`.
+- Em uma viewport mobile estreita, a página é legível sem rolagem horizontal.
+- No mobile, as seções empilham naturalmente e os CTAs são fáceis de tocar.
+- No desktop, a seção sobre usa duas colunas.
+- No desktop, a seção de serviços aparece como grid com múltiplas colunas.
+- O espaçamento permanece equilibrado do mobile ao desktop.
+- Imagens e placeholders não esticam nem distorcem.
+
+## Fase 5: Interação e Acessibilidade
+
+**Status:** TODO
+
+**Objetivo:** Adicionar os estados de interação obrigatórios, o botão flutuante de WhatsApp e os fundamentos de acessibilidade.
+
+**Entregáveis:**
+
+- Atualizar `index.html`
+- Atualizar `styles.css`
+- Adicionar botão fixo de WhatsApp no canto inferior direito
+- Adicionar estados de hover, active e focus-visible para todos os links e CTAs
+- Adicionar textos `alt` descritivos para logomarca, submarca e placeholders de imagem
+- Adicionar labels acessíveis onde necessário
+- Confirmar contraste legível para textos, botões e links
+
+**Critérios de Aceite Manuais:**
+
+- O botão flutuante de WhatsApp permanece visível durante a rolagem.
+- Todos os CTAs e links do footer têm estados visíveis de hover, active e foco por teclado.
+- A navegação por teclado alcança todos os links interativos.
+- Os estilos de foco são claramente visíveis.
+- As imagens têm textos alternativos úteis.
+- Os textos permanecem legíveis sobre as cores de fundo.
+
+## Fase 6: Pronto para GitHub Pages
+
+**Status:** TODO
+
+**Objetivo:** Preparar o site estático finalizado para publicação direta no GitHub Pages sem etapa de build.
+
+**Entregáveis:**
+
+- Verificar que `index.html` está na raiz do repositório
+- Verificar que `styles.css` está na raiz do repositório
+- Verificar que os caminhos das imagens apontam para a pasta `img/` existente usando caminhos relativos
+- Atualizar `README.md` com notas de pré-visualização local e deploy no GitHub Pages, se necessário
+- Manter o projeto sem dependências, sem gerenciador de pacotes e sem configuração de build
+
+**Critérios de Aceite Manuais:**
+
+- O site funciona ao abrir `index.html` diretamente no navegador.
+- Todas as imagens carregam por caminhos relativos.
+- Nenhum comando de build é necessário.
+- Nenhum comando de instalação de pacotes é necessário.
+- A raiz do repositório contém os arquivos prontos para produção.
+- O GitHub Pages pode ser configurado para publicar a partir da raiz do repositório na branch selecionada, geralmente `main`.

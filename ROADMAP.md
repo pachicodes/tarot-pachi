@@ -1,33 +1,33 @@
 # ROADMAP
 
-## Product Summary
+## Resumo do Produto
 
-Pachi is a one-page landing page for **Pachi | Tarot Intuitivo & Direção**, designed as a calm, elegant entry point for people arriving from Instagram. The site will present the brand, explain the reading process, showcase the available services, and guide visitors toward WhatsApp with a trust-first tone.
+Pachi é uma landing page de página única para **Pachi | Tarot Intuitivo & Direção**, pensada como uma entrada calma, elegante e acolhedora para pessoas que chegam pelo Instagram. O site vai apresentar a marca, explicar o processo de leitura, mostrar os serviços disponíveis e conduzir visitantes ao WhatsApp com um tom de confiança antes da conversão.
 
-The final experience should feel editorial, ritualistic, mature, mobile-first, and lightweight.
+A experiência final deve ser editorial, ritualística, madura, mobile-first e leve.
 
-## Chosen Stack
+## Stack Escolhida
 
-The project will use **plain HTML5 and CSS3**.
+O projeto usará **HTML5 e CSS3 puros**.
 
-This is the right direction because the landing page is static, has no backend, no database, no authentication, and does not need a JavaScript framework. Keeping the site dependency-free makes it faster, easier to deploy, and easier to maintain.
+Essa é a direção correta porque a landing page é estática, não tem backend, banco de dados, autenticação nem necessidade de JavaScript ou framework. Manter o site sem dependências deixa a página mais rápida, simples de publicar e fácil de manter.
 
-## Core Features
+## Funcionalidades Principais
 
-1. **Build the static page structure**
-   - Create a semantic `index.html` with all required landing page sections.
-   - Include clear replacement comments for WhatsApp, Instagram, logo, submark, personal photo, and CTA messages.
+1. **Construir a estrutura estática da página**
+   - Criar um `index.html` semântico com todas as seções necessárias da landing page.
+   - Incluir comentários claros indicando onde substituir WhatsApp, Instagram, logomarca, submarca, foto pessoal e mensagens dos CTAs.
 
-2. **Create the visual system**
-   - Create a mobile-first `styles.css` using CSS variables for colors, typography, spacing, borders, and shadows.
-   - Use the existing brand assets in `img/TP-Logomarca.jpg` and `img/TP-Submarca.jpg` as the visual reference.
-   - Apply the warm off-white background, dark olive text, burned gold accents, subtle ritual symbols, and editorial spacing.
+2. **Criar o sistema visual**
+   - Criar um `styles.css` mobile-first usando variáveis CSS para cores, tipografia, espaçamento, bordas e sombras.
+   - Usar os assets existentes em `img/TP-Logomarca.jpg` e `img/TP-Submarca.jpg` como referência visual.
+   - Aplicar fundo off-white quente, texto em verde-oliva escuro, detalhes em dourado queimado, símbolos ritualísticos sutis e espaçamento editorial.
 
-3. **Render the complete landing page**
-   - Implement the hero, manifesto, services, process, decision route, rituals, final CTA, ethical note, footer, and floating WhatsApp button.
-   - Ensure the page is responsive from mobile screens to desktop layouts.
+3. **Renderizar a landing page completa**
+   - Implementar hero, manifesto, serviços, processo, rota de decisão, rituais, CTA final, nota ética, footer e botão flutuante de WhatsApp.
+   - Garantir que a página seja responsiva de telas mobile até layouts desktop.
 
-## Expected File Structure
+## Estrutura Esperada de Arquivos
 
 ```text
 tarot-pachi/
@@ -41,59 +41,59 @@ tarot-pachi/
     └── TP-Submarca.jpg
 ```
 
-## Development Sequence
+## Sequência de Desenvolvimento
 
-### 1. Create the base HTML document
+### 1. Criar o documento HTML base
 
-- Add `index.html`.
-- Set the language to Portuguese.
-- Add metadata for responsive layout, page title, description, and social sharing basics.
-- Link Google Fonts and `styles.css`.
-- Add comments for replacing WhatsApp, Instagram, logo, submark, and future personal photo.
+- Adicionar `index.html`.
+- Definir o idioma da página como português.
+- Adicionar metadados para layout responsivo, título da página, descrição e informações básicas de compartilhamento social.
+- Vincular Google Fonts e `styles.css`.
+- Adicionar comentários para substituir WhatsApp, Instagram, logomarca, submarca e futura foto pessoal.
 
-### 2. Implement all landing page sections
+### 2. Implementar todas as seções da landing page
 
-- Add the hero section with the main promise and primary WhatsApp CTA.
-- Add the about/manifesto section with image placeholder.
-- Add the services grid with the four official offers.
-- Add the process section with four numbered steps.
-- Add the post-Bússola decision route section.
-- Add the rituals and alchemy section with intention tags.
-- Add the final CTA, ethical note, and footer.
+- Adicionar a seção hero com a promessa principal e CTA primário para WhatsApp.
+- Adicionar a seção sobre/manifesto com placeholder de imagem.
+- Adicionar o grid de serviços com as quatro ofertas oficiais.
+- Adicionar a seção de processo com quatro etapas numeradas.
+- Adicionar a seção Rota de Decisão pós-Bússola.
+- Adicionar a seção Rituais & Alquimia com tags de intenção.
+- Adicionar CTA final, nota ética e footer.
 
-### 3. Build the mobile-first visual system
+### 3. Construir o sistema visual mobile-first
 
-- Add `styles.css`.
-- Define `:root` variables for the brand palette, fonts, spacing, radius, and shadows.
-- Style the page for mobile first.
-- Add desktop breakpoints only where the layout needs more width, such as the about section and services grid.
+- Adicionar `styles.css`.
+- Definir variáveis em `:root` para paleta da marca, fontes, espaçamento, raios e sombras.
+- Estilizar a página primeiro para mobile.
+- Adicionar breakpoints para desktop somente onde o layout precisar de mais largura, como na seção sobre e no grid de serviços.
 
-### 4. Add interaction and accessibility polish
+### 4. Adicionar polimento de interação e acessibilidade
 
-- Add hover, active, and focus-visible states for all links and CTAs.
-- Add the fixed WhatsApp button in the lower-right corner.
-- Confirm that all images have useful `alt` text.
-- Confirm that color contrast is readable and that keyboard navigation remains visible.
+- Adicionar estados de hover, active e focus-visible para todos os links e CTAs.
+- Adicionar o botão fixo de WhatsApp no canto inferior direito.
+- Confirmar que todas as imagens tenham textos `alt` úteis.
+- Confirmar que o contraste das cores seja legível e que a navegação por teclado permaneça visível.
 
-### 5. Prepare for GitHub Pages
+### 5. Preparar para GitHub Pages
 
-- Keep all paths relative so the site works from GitHub Pages.
-- Confirm that `index.html` is at the repository root.
-- Document that GitHub Pages should publish from the repository root or the selected deployment branch.
+- Manter todos os caminhos relativos para que o site funcione no GitHub Pages.
+- Confirmar que `index.html` esteja na raiz do repositório.
+- Documentar que o GitHub Pages deve publicar a partir da raiz do repositório ou da branch/pasta configurada.
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-- The project contains `index.html` and `styles.css` at the repository root.
-- The site uses only HTML5 and CSS3, with no React, Tailwind, Bootstrap, SPA framework, backend, database, or build step.
-- The layout is mobile-first and adapts cleanly to desktop.
-- The visual direction matches the existing logo and submark: warm off-white, dark olive, burned gold, subtle ritual geometry, and mature editorial spacing.
-- The page includes all planned sections: hero, manifesto, services, process, decision route, rituals, final CTA, ethical note, and footer.
-- The services section includes the four specified offers with their names, descriptions, delivery details, prices or price guidance, and CTAs.
-- The WhatsApp CTAs use clear replacement comments and include the intended pre-filled message.
-- A floating WhatsApp button remains visible while scrolling.
-- The page has semantic HTML, readable contrast, visible focus states, useful alt text, and accessible link labels.
-- The copy avoids future prediction promises, childish mysticism, aggressive sales language, and cold corporate tone.
+- O projeto contém `index.html` e `styles.css` na raiz do repositório.
+- O site usa apenas HTML5 e CSS3, sem React, Tailwind, Bootstrap, framework SPA, backend, banco de dados ou etapa de build.
+- O layout é mobile-first e se adapta bem ao desktop.
+- A direção visual combina com a logomarca e a submarca existentes: off-white quente, verde-oliva escuro, dourado queimado, geometria ritualística sutil e espaçamento editorial maduro.
+- A página inclui todas as seções planejadas: hero, manifesto, serviços, processo, rota de decisão, rituais, CTA final, nota ética e footer.
+- A seção de serviços inclui as quatro ofertas especificadas com nomes, descrições, detalhes de entrega, preços ou orientação de preço e CTAs.
+- Os CTAs de WhatsApp usam comentários claros para substituição e incluem a mensagem pré-preenchida planejada.
+- Um botão flutuante de WhatsApp permanece visível durante a rolagem.
+- A página tem HTML semântico, contraste legível, estados de foco visíveis, textos alternativos úteis e labels acessíveis para links.
+- A copy evita promessas de previsão do futuro, misticismo infantilizado, linguagem agressiva de venda e tom corporativo frio.
 
-## GitHub Pages Note
+## Nota Sobre GitHub Pages
 
-GitHub Pages can publish this project directly because the site is static and the entry file will be `index.html` at the repository root. After implementation, enable GitHub Pages for the repository and select the branch/root folder that contains `index.html`.
+O GitHub Pages pode publicar este projeto diretamente porque o site é estático e o arquivo de entrada será `index.html` na raiz do repositório. Após a implementação, ative o GitHub Pages para o repositório e selecione a branch/pasta que contém `index.html`.

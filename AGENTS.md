@@ -1,40 +1,40 @@
 # AGENTS.md
 
-## 1. Project Overview
+## 1. Visão Geral do Projeto
 
-This project is a one-page static landing page for **Pachi | Tarot Intuitivo & Direção**.
+Este projeto é uma landing page estática de página única para **Pachi | Tarot Intuitivo & Direção**.
 
-It delivers a calm, elegant, mobile-first experience for people arriving from Instagram. The page presents the brand, explains the reading process, showcases the available services, includes an ethical note, and guides visitors toward WhatsApp with a trust-first tone.
+Ele entrega uma experiência calma, elegante e mobile-first para pessoas que chegam pelo Instagram. A página apresenta a marca, explica o processo de leitura, mostra os serviços disponíveis, inclui uma nota ética e conduz visitantes ao WhatsApp com um tom de confiança antes da conversão.
 
-The final goal is a lightweight, responsive, editorial, ritualistic, and mature landing page that can be published directly with GitHub Pages.
+O objetivo final é uma landing page leve, responsiva, editorial, ritualística e madura, pronta para publicação direta no GitHub Pages.
 
-## 2. Stack and Constraints
+## 2. Stack e Restrições
 
-The stack is:
+A stack é:
 
-- Plain HTML5
-- Plain CSS3
+- HTML5 puro
+- CSS3 puro
 
-The project must remain static and dependency-free.
+O projeto deve permanecer estático e sem dependências.
 
-Do not use:
+Não usar:
 
 - React
 - Vue
 - Angular
 - Tailwind CSS
 - Bootstrap
-- Any SPA framework
-- Any backend
-- Any database
-- Authentication
-- A build step unless explicitly requested later
+- Qualquer framework SPA
+- Qualquer backend
+- Qualquer banco de dados
+- Autenticação
+- Etapa de build, a menos que isso seja solicitado explicitamente depois
 
-The site should run directly in the browser from `index.html`.
+O site deve rodar diretamente no navegador a partir de `index.html`.
 
-## 3. File Structure
+## 3. Estrutura de Arquivos
 
-Expected final structure:
+Estrutura final esperada:
 
 ```text
 tarot-pachi/
@@ -49,85 +49,85 @@ tarot-pachi/
     └── TP-Submarca.jpg
 ```
 
-## 4. Main Commands
+## 4. Comandos Principais
 
-There are no package scripts, build commands, or dependency installation commands for this project.
+Não existem scripts de pacote, comandos de build nem comandos de instalação de dependências para este projeto.
 
-To run locally, open `index.html` directly in a browser.
+Para rodar localmente, abra `index.html` diretamente no navegador.
 
-If a local static server is desired for previewing relative paths, use any simple static file server outside the project configuration. Do not add tooling unless explicitly requested.
+Se for desejável usar um servidor estático local para pré-visualizar caminhos relativos, use qualquer servidor estático simples fora da configuração do projeto. Não adicione tooling a menos que isso seja solicitado explicitamente.
 
-Production build:
+Build de produção:
 
-- No production build exists.
-- No production build is needed.
-- The production output is the repository root containing `index.html`, `styles.css`, and the `img/` assets.
+- Não existe build de produção.
+- Não é necessário build de produção.
+- A saída de produção é a raiz do repositório contendo `index.html`, `styles.css` e os assets em `img/`.
 
-## 5. Code Conventions
+## 5. Convenções de Código
 
-Use semantic HTML:
+Usar HTML semântico:
 
 - `header`
 - `main`
 - `section`
 - `footer`
-- meaningful headings
-- descriptive links and buttons
-- useful `alt` text for images
+- headings significativos
+- links e botões descritivos
+- textos `alt` úteis para imagens
 
-Use mobile-first CSS:
+Usar CSS mobile-first:
 
-- Start with the smallest screen layout.
-- Add media queries only when the layout needs more room.
-- Use CSS custom properties in `:root` for colors, typography, spacing, radius, and shadows.
-- Use `clamp()` for responsive typography.
-- Use `grid` and `flexbox` for layout.
+- Começar pelo layout da menor tela.
+- Adicionar media queries somente quando o layout precisar de mais espaço.
+- Usar propriedades customizadas CSS em `:root` para cores, tipografia, espaçamento, raios e sombras.
+- Usar `clamp()` para tipografia responsiva.
+- Usar `grid` e `flexbox` para layout.
 
-Naming conventions:
+Convenções de nomenclatura:
 
-- Use clear lowercase class names.
-- Prefer readable BEM-like names when helpful, such as `service-card`, `section-heading`, and `floating-whatsapp`.
-- Keep class names tied to the page structure and brand purpose, not visual accidents.
+- Usar nomes de classes claros e em minúsculas.
+- Preferir nomes legíveis inspirados em BEM quando ajudar, como `service-card`, `section-heading` e `floating-whatsapp`.
+- Manter os nomes das classes ligados à estrutura da página e ao propósito da marca, não a detalhes visuais acidentais.
 
-Organization:
+Organização:
 
-- Keep HTML sections in the same order defined by `ROADMAP.md`.
-- Keep CSS grouped by purpose: variables, reset/base, layout utilities, sections, components, responsive rules.
-- Add concise comments only where they help future edits, especially for replacing WhatsApp, Instagram, logo, submark, personal photo, and CTA messages.
+- Manter as seções do HTML na mesma ordem definida em `ROADMAP.md`.
+- Manter o CSS agrupado por propósito: variáveis, reset/base, utilitários de layout, seções, componentes e regras responsivas.
+- Adicionar comentários concisos apenas onde eles ajudam edições futuras, especialmente para substituir WhatsApp, Instagram, logomarca, submarca, foto pessoal e mensagens dos CTAs.
 
-Fetch handling:
+Tratamento de fetch:
 
-- This project does not fetch external data.
-- Do not add fetch logic unless the project scope changes explicitly.
+- Este projeto não busca dados externos.
+- Não adicionar lógica de fetch a menos que o escopo do projeto mude explicitamente.
 
-## 6. Deployment Process
+## 6. Processo de Deploy
 
-GitHub Pages can publish this project directly because it is a static site.
+O GitHub Pages pode publicar este projeto diretamente porque ele é um site estático.
 
-Deployment expectation:
+Expectativa de deploy:
 
-- Entry file: `index.html`
-- Output folder: repository root
-- Build step: none
-- Deploy branch: the branch configured in GitHub Pages, typically `main`
-- Publish source: repository root, unless the repository settings specify another source
+- Arquivo de entrada: `index.html`
+- Pasta de saída: raiz do repositório
+- Etapa de build: nenhuma
+- Branch de deploy: a branch configurada no GitHub Pages, geralmente `main`
+- Fonte de publicação: raiz do repositório, a menos que as configurações do repositório especifiquem outra fonte
 
-Keep all asset paths relative so the site works correctly on GitHub Pages.
+Manter todos os caminhos de assets relativos para que o site funcione corretamente no GitHub Pages.
 
-## 7. What Not To Do
+## 7. O Que Não Fazer
 
-Do not invent new stack choices, frameworks, package managers, bundlers, or build tools.
+Não inventar novas escolhas de stack, frameworks, gerenciadores de pacote, bundlers ou ferramentas de build.
 
-Do not replace the static HTML/CSS approach with a JavaScript app.
+Não substituir a abordagem estática em HTML/CSS por um app JavaScript.
 
-Do not add services, prices, copy, sections, or funnel steps that are not described in `ROADMAP.md` or `plano-landing-page.md`.
+Não adicionar serviços, preços, copy, seções ou etapas de funil que não estejam descritos em `ROADMAP.md` ou `plano-landing-page.md`.
 
-Do not change the brand direction away from warm off-white, dark olive, burned gold, subtle ritual geometry, and mature editorial spacing.
+Não afastar a direção da marca de off-white quente, verde-oliva escuro, dourado queimado, geometria ritualística sutil e espaçamento editorial maduro.
 
-Do not make the page visually childish, overly mystical, neon, corporate, or aggressive in sales tone.
+Não deixar a página visualmente infantil, excessivamente mística, neon, corporativa ou agressiva no tom de venda.
 
-Do not make claims about predicting the future or replacing therapeutic, medical, legal, or financial support.
+Não fazer promessas de previsão do futuro nem substituir apoio terapêutico, médico, jurídico ou financeiro.
 
-Do not remove the ethical note, floating WhatsApp button, mobile-first behavior, accessibility basics, or clear replacement comments.
+Não remover a nota ética, o botão flutuante de WhatsApp, o comportamento mobile-first, os fundamentos de acessibilidade ou os comentários claros de substituição.
 
-Do not assume real WhatsApp or Instagram URLs if they have not been provided. Use clearly marked placeholders instead.
+Não assumir URLs reais de WhatsApp ou Instagram se elas ainda não foram fornecidas. Usar placeholders claramente marcados.
